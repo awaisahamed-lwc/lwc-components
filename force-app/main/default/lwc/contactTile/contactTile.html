@@ -1,0 +1,14 @@
+<template>
+    <template if:true={contact}>
+        <a href="#" onclick={handleSelect}>
+        <lightning-layout vertical-align="center">
+            <lightning-layout-item padding="around-small">
+                <p>{contact.Name}</p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </a>
+    </template>
+    <template if:false={contact}
+        ><p>No contact data available.</p></template
+    >
+</template>

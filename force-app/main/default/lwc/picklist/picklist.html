@@ -1,0 +1,29 @@
+<template>
+        <template if:true={AccountSourceValues.data}>
+                <lightning-combobox name="source"
+                                    label="Account Source"
+                                    value={value}
+                                    placeholder="-Select-"
+                                    options={AccountSourceValues.data.values}
+                                    onchange={handleChange} >
+                </lightning-combobox>
+          </template><br/><br/>
+          <lightning-combobox
+          name="Task Categories"
+          variant="label-hidden"                           
+          placeholder="Task Categories"
+          value={category_value}
+          onchange={handleTaskChange}
+          options={taskCategories.data}>
+      </lightning-combobox><br/><br/>
+
+        <lightning-combobox
+        name="Priority"
+        variant="label-hidden"                           
+        placeholder="Priority"
+        data-filter="priority"
+        value={priority_value}
+        onchange={handlePriority}
+        options={PriorityPicklistValues}>
+    </lightning-combobox>
+</template>
