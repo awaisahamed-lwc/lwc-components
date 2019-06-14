@@ -8,7 +8,7 @@ import AccountSource_FIELD from '@salesforce/schema/Account.AccountSource';
 
 export default class Picklist extends LightningElement {
 
-    @track taskfield1='Task_Test__c';
+    @track taskfield1='Task_Category__c';
 
     @track objectfield1='Task';
 
